@@ -1,0 +1,338 @@
+.reserve-sidebar-sticky {
+  position: sticky;
+  top: 104px;
+  width: 100%;
+}
+
+/* 10% Promo Card */
+.promo-tag-card {
+  background: #FFFFFF;
+  border: 1px solid #EBEBEB;
+  border-radius: 12px;
+  padding: 14px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.promo-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.tag-icon-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.promo-text-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.promo-main-text {
+  font-size: 14px;
+  font-weight: 500;
+  color: #222222;
+  line-height: 18px;
+}
+
+.promo-terms-link {
+  font-size: 13px;
+  text-decoration: underline;
+  color: #222222;
+  cursor: pointer;
+}
+
+.claim-promo-btn {
+  background: #FFFFFF;
+  color: #222222;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 6px 18px;
+  border-radius: 8px;
+  border: 1px solid #DDDDDD;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s;
+  font-family: inherit;
+}
+
+.claim-promo-btn:hover {
+  background: #F7F7F7;
+  border-color: #222222;
+}
+
+.claim-promo-btn.claimed {
+  background: #E8F5E9;
+  color: #2E7D32;
+  border-color: #2E7D32;
+}
+
+/* Reserve Card Box */
+.reserve-card {
+  background: #FFFFFF;
+  border: 1px solid #DDDDDD;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+  position: relative;
+}
+
+.reserve-card-header {
+  margin-bottom: 20px;
+}
+
+.price-title-row {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+}
+
+.price-amount {
+  font-size: 22px;
+  font-weight: 700;
+  color: #222222;
+  letter-spacing: -0.2px;
+}
+
+.price-period {
+  font-size: 16px;
+  color: #222222;
+  font-weight: 400;
+}
+
+/* Date / Guest Inputs */
+.date-guest-box {
+  border: 1px solid #B0B0B0;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+.dates-row {
+  display: flex;
+  border-bottom: 1px solid #B0B0B0;
+  cursor: pointer;
+}
+
+.date-cell {
+  flex: 1;
+  padding: 10px 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.date-cell:first-child {
+  border-right: 1px solid #B0B0B0;
+}
+
+.cell-label {
+  font-size: 10px;
+  font-weight: 700;
+  color: #222222;
+  letter-spacing: 0.5px;
+}
+
+.cell-value {
+  font-size: 14px;
+  color: #222222;
+  margin-top: 2px;
+  white-space: nowrap;
+}
+
+.guests-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 12px;
+  cursor: pointer;
+}
+
+.guests-cell {
+  display: flex;
+  flex-direction: column;
+}
+
+.guests-arrow {
+  color: #222222;
+}
+
+/* Free cancellation promo badge */
+.cancellation-promo-badge {
+  background: #F7F7F7;
+  border-radius: 8px;
+  padding: 12px 14px;
+  margin-bottom: 16px;
+  text-align: center;
+  font-size: 14px;
+  color: #222222;
+  font-weight: 400;
+}
+
+.cancellation-promo-badge strong {
+  font-weight: 600;
+}
+
+/* CTA Button */
+.reserve-cta-btn {
+  background: #E00B41;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 14px;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.15s;
+  font-family: inherit;
+}
+
+.reserve-cta-btn:hover {
+  opacity: 0.92;
+}
+
+.wont-be-charged-note {
+  font-size: 13px;
+  color: #717171;
+  text-align: center;
+  margin-top: 12px;
+  margin-bottom: 0;
+}
+
+.reservation-success-msg {
+  background: #E8F5E9;
+  color: #2E7D32;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 13px;
+  text-align: center;
+  margin-top: 12px;
+}
+
+/* Guest Selector Dropdown */
+.guest-selector-dropdown {
+  position: absolute;
+  top: 180px;
+  left: 24px;
+  right: 24px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  border: 1px solid #DDDDDD;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  padding: 16px;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  animation: fadeIn 0.15s ease-out;
+}
+
+.guest-row-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.guest-type {
+  font-size: 16px;
+  font-weight: 600;
+  color: #222222;
+}
+
+.guest-desc {
+  font-size: 13px;
+  color: #717171;
+}
+
+.stepper-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.stepper-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid #B0B0B0;
+  background: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #717171;
+  transition: border-color 0.15s, color 0.15s;
+}
+
+.stepper-btn:hover:not(:disabled) {
+  border-color: #222222;
+  color: #222222;
+}
+
+.stepper-btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.stepper-val {
+  font-size: 16px;
+  min-width: 16px;
+  text-align: center;
+  color: #222222;
+}
+
+.guest-dropdown-close {
+  display: flex;
+  justify-content: flex-end;
+  border-top: 1px solid #EBEBEB;
+  padding-top: 12px;
+}
+
+.close-dropdown-btn {
+  background: none;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: underline;
+  cursor: pointer;
+  color: #222222;
+}
+
+/* Report listing */
+.report-listing-wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+.report-listing-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  border: none;
+  font-size: 13px;
+  color: #717171;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: inherit;
+}
+
+.report-listing-btn span {
+  text-decoration: underline;
+}
+
+.report-listing-btn:hover {
+  color: #222222;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
