@@ -101,7 +101,8 @@
 }
 
 .cal-day-cell {
-  height: 44px;
+  height: auto;
+  aspect-ratio: 1;
 }
 
 .cal-day-cell-wrap {
@@ -109,7 +110,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 44px;
+  height: 100%;
+  width: 100%;
 }
 
 .cal-day-cell-wrap.in-range-wrap {
@@ -125,8 +127,11 @@
 }
 
 .cal-day-btn {
-  width: 44px;
-  height: 44px;
+  width: 100%;
+  max-width: 44px;
+  height: 100%;
+  max-height: 44px;
+  aspect-ratio: 1;
   border-radius: 50%;
   border: 1px solid transparent;
   background: transparent;
@@ -199,6 +204,15 @@
   color: #000000;
 }
 
+.single-month-title {
+  display: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #222222;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
 @media (max-width: 820px) {
   .two-months-container {
     grid-template-columns: 1fr;
@@ -206,5 +220,26 @@
   }
   .month-names-header-row {
     display: none;
+  }
+  .single-month-title {
+    display: block;
+  }
+}
+
+@media (max-width: 600px) {
+  .calendar-section {
+    padding: 20px 0;
+  }
+  .calendar-main-title {
+    font-size: 18px;
+  }
+  .two-months-container {
+    gap: 20px;
+  }
+  .cal-day-btn {
+    font-size: 13px;
+  }
+  .weekday-col-label {
+    font-size: 11px;
   }
 }

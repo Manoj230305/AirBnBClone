@@ -137,10 +137,14 @@
     flex-direction: column;
     align-items: flex-start;
     padding: 16px;
+    gap: 12px;
   }
   .gf-center {
     border-left: none;
     padding-left: 0;
+    padding-right: 0;
+    max-width: 100%;
+    width: 100%;
   }
   .gf-right {
     width: 100%;

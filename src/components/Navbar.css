@@ -177,17 +177,73 @@
 }
 
 @media (max-width: 768px) {
-  .logo-text {
+  .airbnb-header {
+    height: 64px;
+    padding: 0 16px;
+  }
+
+  .header-logo-img {
+    height: 26px;
+  }
+
+  .header-search-bar {
+    flex: 1;
+    min-width: 0;
+    margin: 0 10px;
+  }
+
+  .search-pill-btn {
+    width: 100%;
+    padding: 6px 8px 6px 12px;
+    gap: 6px;
+    justify-content: space-between;
+  }
+
+  .search-home-img {
+    width: 28px;
+    height: 28px;
+  }
+
+  .search-pill-item {
+    font-size: 13px;
+  }
+
+  .host-cta-btn,
+  .globe-btn {
     display: none;
   }
 
-  .host-cta-btn {
+  .header-circle-btn {
+    width: 38px;
+    height: 38px;
+  }
+}
+
+@media (max-width: 520px) {
+  .airbnb-header {
+    padding: 0 12px;
+  }
+
+  .header-logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .header-logo-img {
+    height: 24px;
+  }
+
+  .search-pill-left-icon {
     display: none;
   }
 
   .search-pill-btn {
-    padding: 6px 6px 6px 12px;
-    gap: 8px;
+    padding: 6px 8px 6px 12px;
+  }
+
+  .search-pill-divider:nth-of-type(2),
+  .search-pill-item.muted {
+    display: none;
   }
 
   .search-pill-item {

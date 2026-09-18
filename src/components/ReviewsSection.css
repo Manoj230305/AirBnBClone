@@ -335,9 +335,72 @@
 @media (max-width: 900px) {
   .category-ratings-row {
     flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 12px;
   }
+
+  .category-col {
+    min-width: 130px;
+    flex-shrink: 0;
+    scroll-snap-align: start;
+    padding: 0 14px;
+  }
+
   .review-cards-grid {
     grid-template-columns: 1fr;
-    gap: 32px;
+    gap: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .reviews-section {
+    padding: 24px 0;
+  }
+
+  .reviews-hero-badge {
+    margin-bottom: 24px;
+  }
+
+  .laurel-big-wrapper {
+    gap: 10px;
+  }
+
+  .laurel-branch-img {
+    height: 52px;
+  }
+
+  .big-rating-number {
+    font-size: 52px;
+    letter-spacing: -1.5px;
+  }
+
+  .gf-heading {
+    font-size: 18px;
+  }
+
+  .gf-sub-text {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+
+  .category-col {
+    min-width: 120px;
+    padding: 0 10px;
+  }
+
+  .cat-title {
+    font-size: 13px;
+  }
+
+  .cat-score {
+    font-size: 16px;
+    margin-bottom: 6px;
+  }
+
+  .show-all-reviews-btn {
+    width: 100% !important;
+    text-align: center !important;
   }
 }

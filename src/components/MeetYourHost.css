@@ -269,16 +269,39 @@
 @media (max-width: 960px) {
   .host-layout-grid {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 32px;
   }
   
   .host-passport-card {
-    max-width: 360px;
+    max-width: 100%;
+    width: 100%;
   }
 }
 
 @media (max-width: 640px) {
+  .meet-your-host-section {
+    padding: 24px 0 16px;
+  }
+
+  .host-passport-card {
+    padding: 20px 16px;
+  }
+
+  .passport-avatar-box {
+    width: 72px;
+    height: 72px;
+  }
+
+  .passport-host-name {
+    font-size: 19px;
+  }
+
   .co-hosts-grid {
     grid-template-columns: 1fr;
+  }
+
+  .message-host-btn {
+    width: 100%;
+    text-align: center;
   }
 }

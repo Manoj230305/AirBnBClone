@@ -128,6 +128,7 @@ export default function CalendarSection({ checkInDate, checkOutDate, onSelectDat
       <div className="two-months-container">
         {/* Month 1 */}
         <div className="single-month-col">
+          <h4 className="single-month-title">{month1.name} {month1.year}</h4>
           <div className="cal-weekdays-row">
             {daysOfWeek.map((d, i) => (
               <span key={i} className="weekday-col-label">{d}</span>
@@ -140,6 +141,7 @@ export default function CalendarSection({ checkInDate, checkOutDate, onSelectDat
 
         {/* Month 2 */}
         <div className="single-month-col">
+          <h4 className="single-month-title">{month2.name} {month2.year}</h4>
           <div className="cal-weekdays-row">
             {daysOfWeek.map((d, i) => (
               <span key={i} className="weekday-col-label">{d}</span>

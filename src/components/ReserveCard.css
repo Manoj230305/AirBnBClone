@@ -336,3 +336,24 @@
   from { opacity: 0; transform: translateY(-4px); }
   to { opacity: 1; transform: translateY(0); }
 }
+
+@media (max-width: 600px) {
+  .reserve-card {
+    padding: 18px 16px;
+    border-radius: 12px;
+  }
+  .promo-tag-card {
+    padding: 12px 14px;
+    border-radius: 10px;
+  }
+  .promo-left {
+    gap: 10px;
+  }
+  .promo-main-text {
+    font-size: 13px;
+  }
+  .claim-promo-btn {
+    padding: 6px 12px;
+    font-size: 13px;
+  }
+}

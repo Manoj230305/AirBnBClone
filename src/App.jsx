@@ -400,6 +400,21 @@ export default function App() {
           </div>
         </div>
       )}
+
+      {/* Sticky Mobile Booking Bottom Bar */}
+      <div className="mobile-reserve-bar">
+        <div className="mobile-reserve-left">
+          <div className="mobile-reserve-price">
+            {listingData.currency}28,499 <span style={{ fontSize: 13, fontWeight: 400, color: '#717171' }}>5 nights</span>
+          </div>
+          <button className="mobile-reserve-dates" onClick={scrollToCalendar}>
+            {checkInDate && checkOutDate ? `${checkInDate} - ${checkOutDate}` : 'Add dates'}
+          </button>
+        </div>
+        <button className="mobile-reserve-btn" onClick={scrollToCalendar}>
+          Reserve
+        </button>
+      </div>
     </div>
   );
 }
